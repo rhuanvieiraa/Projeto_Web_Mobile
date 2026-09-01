@@ -49,8 +49,8 @@ Guarda a logo do projeto e o menu de navegação nav para transitar entre as pá
 <img width="792" height="276" alt="image" src="https://github.com/user-attachments/assets/01ba0feb-6d95-45d4-871f-ba3560e78394" />
 
 # Apresentação - section
-Mostra o título principal (<h1>) e uma breve introdução sobre a plataforma.
-A tag (<main>) indica que o conteúdo é exclusivo DAQUELA página e não vai se repetir em outra (como o header e o footer por exemplo).
+Mostra o título principal h1 e uma breve introdução sobre a plataforma.
+A tag main indica que o conteúdo é exclusivo DAQUELA página e não vai se repetir em outra (como o header e o footer por exemplo).
 
 <img width="930" height="302" alt="image" src="https://github.com/user-attachments/assets/66347f40-faf0-4ec4-b4fb-8816302769f6" />
 
