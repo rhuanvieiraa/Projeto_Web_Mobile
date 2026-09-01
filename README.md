@@ -39,26 +39,27 @@ No final, a ideia é simples: usar a tecnologia para aproximar a comunidade do p
 <img width="800" height="557" alt="image" src="https://github.com/user-attachments/assets/b226d7f2-8c37-44a4-b1bf-1d3d484dcbc0" />
 
 
-## Tutorial da Construção da Página Principal (index.html)
+## Tutorial da Construção da Página Principal - index.html
+
 A página principal foi construída com HTML5, facilitando a leitura por leitores de tela e facilitando a leitura por leitores de tela e a navegação no celular.
 
 # Cabeçalho <header>
-Guarda a logo do projeto e o menu de navegação (<nav>) para transitar entre as páginas.
+Guarda a logo do projeto e o menu de navegação nav para transitar entre as páginas.
 
 <img width="792" height="276" alt="image" src="https://github.com/user-attachments/assets/01ba0feb-6d95-45d4-871f-ba3560e78394" />
 
-# Apresentação <section>
+# Apresentação - section
 Mostra o título principal (<h1>) e uma breve introdução sobre a plataforma.
 A tag (<main>) indica que o conteúdo é exclusivo DAQUELA página e não vai se repetir em outra (como o header e o footer por exemplo).
 
 <img width="930" height="302" alt="image" src="https://github.com/user-attachments/assets/66347f40-faf0-4ec4-b4fb-8816302769f6" />
 
-# Mural de Ocorrências <article>
+# Mural de Ocorrências - article
 Usa a tag <article> para cada denúncia, isolando o título, o bairro, o status (pendente/resolvido) e a descrição do problema.
 
 <img width="965" height="231" alt="image" src="https://github.com/user-attachments/assets/a364778b-e968-4ac5-8503-1df8873ccc62" />
 
-# Rodapé <footer>
+# Rodapé - footer
 Exibe as informações do projeto extensionista e os links de contato no final da tela.
 
 <img width="939" height="117" alt="image" src="https://github.com/user-attachments/assets/abb346bb-bcde-460c-874e-8be6c12dca3a" />
