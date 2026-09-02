@@ -39,29 +39,50 @@ No final, a ideia é simples: usar a tecnologia para aproximar a comunidade do p
 <img width="800" height="557" alt="image" src="https://github.com/user-attachments/assets/b226d7f2-8c37-44a4-b1bf-1d3d484dcbc0" />
 
 
-## Tutorial da Construção da Página Principal - index.html
+# Tutorial da Construção da Página Principal - index.html
+A página principal do projeto foi estruturada em **HTML5**, focada em acessibilidade, navegação fluida em dispositivos móveis e fácil integração com os arquivos CSS e JavaScript que serão incluídos no decorrer do projeto.
 
-A página principal foi construída com HTML5, facilitando a leitura por leitores de tela e facilitando a leitura por leitores de tela e a navegação no celular.
+#### 1. Cabeçalho e Navegação (`<header>`)
+Abre a página com a identidade do projeto e o menu de links essenciais.
 
-# Cabeçalho <header>
-Guarda a logo do projeto e o menu de navegação nav para transitar entre as páginas.
+* **`<body id="top">`**: Essa identificação permite o usuário volte até o topo da página.
+* **`<img>`**: Exibe a logo principal da plataforma.
+* **`<button id="menu-btn">`**: Botão preparado para acionar a navegação em telas menores (mobile).
+* **`<nav>` e `<ul>`**: Estruturam os links de navegação interna (`#denuncia`, `#denuncias-recentes`) e externa (`login.html`).
 
-<img width="792" height="276" alt="image" src="https://github.com/user-attachments/assets/01ba0feb-6d95-45d4-871f-ba3560e78394" />
+<img width="544" height="211" alt="image" src="https://github.com/user-attachments/assets/c9e21a6a-8d75-4cd3-be34-9a4e6c96ca06" />
 
-# Apresentação - section
-Mostra o título principal h1 e uma breve introdução sobre a plataforma.
-A tag main indica que o conteúdo é exclusivo DAQUELA página e não vai se repetir em outra (como o header e o footer por exemplo).
+#### 2. Formulário de Ocorrências (`<section id="denuncia">`)
+Seção interativa no `<main>` para que o morador possa registrar um problema direto da página inicial.
 
-<img width="930" height="302" alt="image" src="https://github.com/user-attachments/assets/66347f40-faf0-4ec4-b4fb-8816302769f6" />
+* **`<form id="form-denuncia">`**: Agrupa os campos onde o usuário colocará os dados da ocorrência.
+* **`<select>`**: Cria a caixa de seleção para o usuário selecionar qual a categoria do problema (Asfalto, Iluminação, Lixo, etc.).
+* **`<input type="file" accept="image/*">`**: Habilita o envio de imagem da ocorrência, compatível com a câmera e galeria do celular.
+* **`required`**: Validação que impede o envio do formulário com campos em branco.
+* * **`<label for="...">`**: Associa o texto ao seu campo de entrada correspondente através do atributo `for`.
 
-# Mural de Ocorrências - article
-Usa a tag <article> para cada denúncia, isolando o título, o bairro, o status (pendente/resolvido) e a descrição do problema.
+<img width="1070" height="543" alt="image" src="https://github.com/user-attachments/assets/8ea25bb3-da40-46c4-9841-93a4ad38c517" />
 
-<img width="965" height="231" alt="image" src="https://github.com/user-attachments/assets/a364778b-e968-4ac5-8503-1df8873ccc62" />
+#### 3. Mural de Denúncias Recentes (`<section id="denuncias-recentes">`)
+Lista e exibe os problemas já reportados na comunidade para acompanhamento.
 
-# Rodapé - footer
-Exibe as informações do projeto extensionista e os links de contato no final da tela.
+* **`<article class="card-denuncia">`**: Guarda cada denúncia individualmente de forma isolada.
+* **`<strong>`**: Dá destaque nas partes mais importantes da publicação, como o bairro e o status (Pendente ou Resolvido).
 
-<img width="939" height="117" alt="image" src="https://github.com/user-attachments/assets/abb346bb-bcde-460c-874e-8be6c12dca3a" />
+<img width="732" height="351" alt="image" src="https://github.com/user-attachments/assets/c1534c7a-b342-45d9-9e7a-e03f583d0565" />
+
+#### 4. Rodapé e Rolagem Interna (`<footer>`)
+Final da página com informações do projeto e links úteis.
+
+* **`&copy;`**: Utilizada para gerar o símbolo de copyright (©).
+* **`<a href="#top">`**: Link que leva direto ao ID do topo da página, permitindo a função "Voltar ao Início" sem recarregar a tela.
+
+<img width="521" height="123" alt="image" src="https://github.com/user-attachments/assets/40985a1f-d5c4-435e-8717-24585fa7b9f6" />
 
 
+#### 5. O Papel da Tag `<main>` no Projeto
+* **`<main>`**: A tag foi utilizada para separar de forma clara o conteúdo "exclusivo" da página daqueles que aparecem repetitivamente em todo o site, como o cabeçalho (`<header>`) e o rodapé (`<footer>`).
+
+Trecho do código utilizado na main:
+
+<img width="855" height="753" alt="image" src="https://github.com/user-attachments/assets/823e580e-ee14-475a-8616-4ca8a15458b9" />
