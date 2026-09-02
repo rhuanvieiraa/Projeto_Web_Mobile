@@ -1,40 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Conecta Cidade - Início </title>
     </head>
-    <body>
-
+    <body id="top">
         <header>
-            <img src="logo.png" alt="Conecta Cidae">
+            <img src="logo.png">
+            <button id="menu-btn"> ☰ </button>
             <nav>
                 <ul>
-                    <li><a href="index.html"> Início </a></li>
-                    <li><a href="denuncia.html"> Fazer Denúncia </a></li>
-                    <li><a href="minhas-denuncias.html"> Minhas Denúncias </a></li>
-                    <li><a href="login.html"> login </a></li>
+                    <li><a href="#denuncia"> Criar Denúncia </a></li>
+                    <li><a href="denuncias-recentes"> Denúncias </a></li>
+                    <li><a href="login.html"> Login </a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <section id="denuncia">
+                <h2>Registrar Ocorrência </h2>
+                <form id="form-denuncia">
+                    <label for="titulo"> Título da Ocorrência: </label><br>
+                    <input type="text" id="titulo" name="titulo" placeholder="Ex: Buraco na pista" required><br><br>
+
+                    <label for="categoria"> Categoria: </label><br>
+                    <select id ="categoria" name="categoria" required>
+                        <option value=""> Selcione uma Opção </option>
+                        <option value="asfalto"> Asfalto / Buraco </option>
+                        <option value="iluminacao"> Iluminação Pública </option>
+                        <option value="lixo"> Lixo / Entulho </option>
+                        <option value="outros"> Outros </option>
+                    </select><br><br>
+
+                    <label for="bairro"> Bairro / Endereço: </label><br>
+                    <input type="text" id="bairro" name="bairro" placeholder="Ex: Pinheiros" required><br><br>
+
+                    <label for="foto"> Foto do Problema (Opcional): </label><br>
+                    <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+                    <label for="descricao"> Descrição Detalhada: </label><br>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Conte mais detalhes..." required></textarea><br><br>
+
+                    <button type="submit"> Enviar Denúncia </button>
+                </form>
+            </section>
+
             <section id="denuncias-recentes">
-                <h2> Denúncias Recentes </h2>
+                <h2> Denúncia Recentes </h2>
 
                 <article class="card-denuncia">
-                    <h3> Buraco na Via Principal</h3>
-                    <p><strong> Bairro: </strong> Pinheiros </p>
-                    <p><strong> Status: </strong> Pendente </p>
-                    <p> Existe um buraco na pista da direita provocando risco aos motoristas. </p>
+                    <h3> Buraco na via principal </h3>
+                    <p><strong> Bairro: </strong> Pinheiros</p>
+                    <p><strong> Status: </strong> Pendente</p>
+                    <p> Existe um buraco na pista da direita provocando risco aos motoristas.</p>
+                </article>
+
+                <article class="card-denuncia">
+                    <h3> Poste com Iluminação Queimada </h3>
+                    <p><strong> Bairro: </strong> Butantã </p>
+                    <p><strong> Status: </strong> Resolvido </p>
+                    <p> Rua escura perto da travessa principal.</p>                 
                 </article>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 Conect Cidade - Projeto Extensionista</p>
+            <p>&copy; 2026 Conecta Cidade - Projeto Extensionista </p>
             <a href="#contato"> Contato </a>
+
+            <a href="#top"> Voltar ao Início </a>
         </footer>
     </body>
 </html>
