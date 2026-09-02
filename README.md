@@ -1,4 +1,4 @@
-# Projeto_Web_Mobile
+# Projeto Web Mobile - Conecta Cidade
 Aluno: Rhuan Vieira de Souza
 RA: 10755828
 
