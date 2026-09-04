@@ -86,3 +86,9 @@ Final da página com informações do projeto e links úteis.
 Trecho do código utilizado na main:
 
 <img width="855" height="753" alt="image" src="https://github.com/user-attachments/assets/823e580e-ee14-475a-8616-4ca8a15458b9" />
+
+
+#### 5. Botão `button id ="menu-btn"` no Projeto
+Botão inserido estratégicamente na página principal pois ele terá uma utilidade futura na implementação do CSS e navegação mobile do projeto.
+
+<img width="316" height="60" alt="image" src="https://github.com/user-attachments/assets/c3276930-15c6-40e1-bde5-50c5ffe2771d" />
