@@ -162,33 +162,31 @@ A imagem abaixo mostra o resultado da página utilizando apenas a estrutura HTML
 
 <img width="1005" height="1035" alt="image" src="https://github.com/user-attachments/assets/dfc5affe-e8ec-45d7-8176-0aa90377e6a0" />
 
-### Tutorial de Estilização: Folha de Estilos (`style.css`)
+### Tutorial do CSS da página inicial. (`style.css`)  
 
 A estilização do **Conecta Cidade** foi construída utilizando práticas modernas de CSS3, garantindo uma identidade visual limpa, responsiva e alinhada às diretrizes de acessibilidade e usabilidade.
 
 ---
 
 #### 1. Regras Globais e Variáveis (`:root`)
-Padronização da base do documento e centralização da paleta de cores institucional.
+Padronização do documento e definição da paleta de cores do projeto.
 
-* **`*` (Reset Global)**: Zera as margens (`margin: 0`) e espaçamentos (`padding: 0`) padrão dos navegadores, além de aplicar `box-sizing: border-box` para simplificar o cálculo do tamanho dos elementos.
-* **`:root`**: Define variáveis globais de cores (tons de azul, amarelo de destaque, cinzas e branco), facilitando a manutenção e garantindo a consistência visual.
-* **`html { scroll-behavior: smooth; }`**: Ativa a rolagem suave ao clicar nos links de ancoragem interna.
+* **`*` (Reset Global)**: Zera as margens (`margin: 0`) e espaçamentos (`padding: 0`) padrão dos navegadores, além de aplicar `box-sizing: border-box` para simplificar o ajuste do tamanho dos elementos.
+* **`:root`**: Define variáveis globais de cores (tons de azul, amarelo de destaque, cinzas e branco), facilitando a manutenção do código.
+* **`html { scroll-behavior: smooth; }`**: Ativa a rolagem suave ao clicar nos links de movimentação interna.
 
 <img width="359" height="355" alt="image" src="https://github.com/user-attachments/assets/b09b8673-c061-4b6a-8729-500f5ff211a5" />
-
 
 ---
 
 #### 2. Cabeçalho e Navegação (`header`)
 Alinhamento e estilização da barra superior da aplicação.
 
-* **`display: flex`**: Organiza a logo e a lista de navegação lado a lado, utilizando `justify-content: space-between` para empurrá-los para as extremidades.
+* **`display: flex`**: Organiza a logo e a lista de navegação lado a lado, utilizando `justify-content: space-between` para empurrá-los para os cantos.
 * **`#menu-btn { display: none; }`**: Oculta o botão hambúrguer no modo desktop, reservando sua exibição apenas para telas menores.
 * **`nav a:hover`**: Aplica uma transição suave de cor (`color: var(--amarelo)`) ao passar o mouse sobre os links do menu.
 
 <img width="437" height="428" alt="image" src="https://github.com/user-attachments/assets/90d645f4-1e21-430f-8d79-09f925869b12" />
-
 
 ---
 
