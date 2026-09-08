@@ -39,56 +39,117 @@ No final, a ideia é simples: usar a tecnologia para aproximar a comunidade do p
 <img width="800" height="557" alt="image" src="https://github.com/user-attachments/assets/b226d7f2-8c37-44a4-b1bf-1d3d484dcbc0" />
 
 
-# Tutorial da Construção da Página Principal - index.html
-A página principal do projeto foi estruturada em **HTML5**, focada em acessibilidade, navegação fluida em dispositivos móveis e fácil integração com os arquivos CSS e JavaScript que serão incluídos no decorrer do projeto.
+# Tutorial da Construção da Página Principal - `index.html`
 
-#### 1. Cabeçalho e Navegação (`<header>`)
-Abre a página com a identidade do projeto e o menu de links essenciais.
+A página principal do projeto foi estruturada em **HTML5**, com foco em organização, acessibilidade, navegação em dispositivos móveis e integração com os arquivos CSS e JavaScript que serão adicionados durante o desenvolvimento do projeto.
 
-* **`<body id="top">`**: Essa identificação permite o usuário volte até o topo da página.
-* **`<img>`**: Exibe a logo principal da plataforma.
-* **`<button id="menu-btn">`**: Botão preparado para acionar a navegação em telas menores (mobile).
-* **`<nav>` e `<ul>`**: Estruturam os links de navegação interna (`#denuncia`, `#denuncias-recentes`) e externa (`login.html`).
+## 1. Cabeçalho e Navegação (`<header>`)
 
-<img width="544" height="211" alt="image" src="https://github.com/user-attachments/assets/c9e21a6a-8d75-4cd3-be34-9a4e6c96ca06" />
+O cabeçalho abre a página com a identidade visual do projeto e o menu com os principais links de navegação.
 
-#### 2. Formulário de Ocorrências (`<section id="denuncia">`)
-Seção interativa no `<main>` para que o morador possa registrar um problema direto da página inicial.
+- **`<img>`**: Exibe a logo principal do Conecta Cidade, armazenada dentro da pasta `imagens`.
+- **`<button id="menu-btn">`**: Botão preparado para ser utilizado futuramente na navegação mobile.
+- **`<nav>`**: Define a área de navegação do site.
+- **`<ul>`**: Organiza os links do menu em uma lista.
+- **`<a>`**: Cria links para outras páginas ou para partes específicas da página principal.
 
-* **`<form id="form-denuncia">`**: Agrupa os campos onde o usuário colocará os dados da ocorrência.
-* **`<select>`**: Cria a caixa de seleção para o usuário selecionar qual a categoria do problema (Asfalto, Iluminação, Lixo, etc.).
-* **`<input type="file" accept="image/*">`**: Habilita o envio de imagem da ocorrência, compatível com a câmera e galeria do celular.
-* **`required`**: Validação que impede o envio do formulário com campos em branco.
-* * **`<label for="...">`**: Associa o texto ao seu campo de entrada correspondente através do atributo `for`.
+O botão de menu foi inserido no cabeçalho para ser utilizado futuramente em dispositivos móveis.
+No momento, o botão ainda não possui sua funcionalidade completa, pois a abertura e o fechamento do menu serão implementados posteriormente com JavaScript.
 
-<img width="1070" height="543" alt="image" src="https://github.com/user-attachments/assets/8ea25bb3-da40-46c4-9841-93a4ad38c517" />
+Também foi utilizado o **`id="top"`** na tag `<body>`, permitindo que o usuário volte ao início da página através do link presente no rodapé.
 
-#### 3. Mural de Denúncias Recentes (`<section id="denuncias-recentes">`)
-Lista e exibe os problemas já reportados na comunidade para acompanhamento.
+<img width="596" height="218" alt="image" src="https://github.com/user-attachments/assets/ef8a8309-2de9-4139-820b-d002b0ef05f3" />
 
-* **`<article class="card-denuncia">`**: Guarda cada denúncia individualmente de forma isolada.
-* **`<strong>`**: Dá destaque nas partes mais importantes da publicação, como o bairro e o status (Pendente ou Resolvido).
+## 2. Seção de Apresentação (`<section class="apresentacao">`)
 
-<img width="732" height="351" alt="image" src="https://github.com/user-attachments/assets/c1534c7a-b342-45d9-9e7a-e03f583d0565" />
+Essa seção foi criada para apresentar rapidamente ao usuário a principal proposta do Conecta Cidade.
 
-#### 4. Rodapé e Rolagem Interna (`<footer>`)
-Final da página com informações do projeto e links úteis.
+- **`<section>`**: Separa essa área das outras partes da página.
+- **`<div class="apresentacao-conteudo">`**: Agrupa o conteúdo da apresentação.
+- **`<h1>`**: Exibe a mensagem principal da página.
+- **`<p>`**: Explica de forma resumida o objetivo do projeto.
+- **`<a href="#denuncia">`**: Leva o usuário diretamente até o formulário de registro de ocorrência.
 
-* **`&copy;`**: Utilizada para gerar o símbolo de copyright (©).
-* **`<a href="#top">`**: Link que leva direto ao ID do topo da página, permitindo a função "Voltar ao Início" sem recarregar a tela.
+  <img width="919" height="133" alt="image" src="https://github.com/user-attachments/assets/d97e94db-b67b-4bb5-922f-c428890623f5" />
 
-<img width="521" height="123" alt="image" src="https://github.com/user-attachments/assets/40985a1f-d5c4-435e-8717-24585fa7b9f6" />
+## 3. Área de Conteúdo (`<section class="area-conteudo">`)
+
+Essa seção foi criada para agrupar duas partes da página: as denúncias recentes e o bloco “Sobre Nós”.
+
+- **`<section class="area-conteudo">`**: Agrupa os conteúdos que aparecem juntos nessa parte da página.
+- Dentro dela estão o mural de denúncias recentes e a seção complementar “Sobre Nós”.
+
+<img width="719" height="558" alt="image" src="https://github.com/user-attachments/assets/444a35c2-5ece-4c42-89a8-5bfa5b424180" />
+
+## 4. Mural de Denúncias Recentes (`<div id="denuncias-recentes">`)
+
+Essa área lista e exibe alguns problemas que já foram registrados pela comunidade.
+
+- **`<div id="denuncias-recentes">`**: Agrupa as denúncias exibidas na página.
+- **`<article class="card-denuncia">`**: Representa cada denúncia de forma individual.
+- **`<h3>`**: Exibe o título da ocorrência.
+- **`<strong>`**: Dá destaque para informações importantes, como bairro e status.
+- **`<p>`**: Exibe os detalhes e a descrição da denúncia.
+
+<img width="709" height="333" alt="image" src="https://github.com/user-attachments/assets/6540f487-08ce-4309-a328-482c9094e164" />
+
+Os exemplos atuais mostram ocorrências com status diferentes, como **Pendente** e **Resolvido**.
+
+## 5. Seção Sobre Nós (`<aside>`)
+
+A seção “Sobre Nós” apresenta informações complementares sobre a proposta do projeto.
+
+- **`<aside>`**: Foi utilizado para separar um conteúdo complementar do conteúdo principal da página.
+- **`<h2>`**: Exibe o título da seção.
+- **`<p>`**: Apresenta informações sobre a ideia e o objetivo do Conecta Cidade.
+
+Essa parte explica que o projeto busca aproximar a população dos problemas urbanos e facilitar o acompanhamento das ocorrências registradas.
+
+<img width="561" height="177" alt="image" src="https://github.com/user-attachments/assets/78995c5a-42b9-4bc7-bcc3-c63045925621" />
+
+## 6. Formulário de Ocorrências (`<section id="denuncia">`)
+
+Essa seção permite que o usuário registre um problema diretamente pela página principal.
+
+- **`<form id="form-denuncia">`**: Agrupa todos os campos necessários para o registro da ocorrência.
+- **`<label>`**: Mostra o nome ou a instrução de um campo do formulário.
+- **`<input type="text">`**: Permite inserir informações como título e bairro/endereço.
+- **`<select>`**: Permite que o usuário escolha a categoria do problema.
+- **`<option>`**: Define as opções disponíveis dentro do campo de categoria.
+- **`<input type="file">`**: Permite que o usuário envie uma foto do problema.
+- **`accept="image/*"`**: Limita o envio para arquivos de imagem.
+- **`<textarea>`**: Permite escrever uma descrição mais detalhada da ocorrência.
+- **`required`**: Impede o envio do formulário caso um campo obrigatório esteja vazio.
+- **`placeholder`**: Exibe exemplos dentro dos campos para orientar o preenchimento.
+- **`<button type="submit">`**: Cria o botão utilizado para enviar a denúncia.
+
+<img width="993" height="510" alt="image" src="https://github.com/user-attachments/assets/c920df1e-f0b3-4bbf-9e0a-c875aef789c2" />
+
+## 7. Rodapé (`<footer>`)
+
+O rodapé aparece no final da página e contém informações do projeto e links de navegação.
+
+- **`<footer>`**: Define a parte final da página.
+- **`<div class="footer-links">`**: Agrupa os links presentes no rodapé.
+- **`<a href="#top">`**: Leva o usuário de volta ao início da página.
+- **`<a href="#contato">`**: Link reservado para uma futura área de contato.
+- **`&copy;`**: Gera o símbolo de copyright (`©`).
+
+<img width="558" height="156" alt="image" src="https://github.com/user-attachments/assets/a48bdb42-2182-484e-8782-adaaa1820f27" />
 
 
-#### 5. O Papel da Tag `<main>` no Projeto
-* **`<main>`**: A tag foi utilizada para separar de forma clara o conteúdo "exclusivo" da página daqueles que aparecem repetitivamente em todo o site, como o cabeçalho (`<header>`) e o rodapé (`<footer>`).
+Também é exibido o nome do projeto e a identificação como projeto extensionista.
 
-Trecho do código utilizado na main:
+## 8. O Papel da Tag `<main>` no Projeto
 
-<img width="855" height="753" alt="image" src="https://github.com/user-attachments/assets/823e580e-ee14-475a-8616-4ca8a15458b9" />
+A tag `<main>` foi utilizada para separar o conteúdo principal da página dos elementos que aparecem fora dessa área, como o cabeçalho (`<header>`) e o rodapé (`<footer>`).
 
+Dentro da `<main>` estão as principais partes da página:
 
-#### 5. Botão `button id ="menu-btn"` no Projeto
-Botão inserido estratégicamente na página principal pois ele terá uma utilidade futura na implementação do CSS e navegação mobile do projeto.
+- seção de apresentação;
+- área de conteúdo;
+- denúncias recentes;
+- seção “Sobre Nós”;
+- formulário de ocorrência.
 
-<img width="316" height="60" alt="image" src="https://github.com/user-attachments/assets/c3276930-15c6-40e1-bde5-50c5ffe2771d" />
+O uso da tag `<main>` ajuda a manter o código organizado e facilita a identificação do conteúdo principal da página.
