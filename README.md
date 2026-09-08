@@ -153,3 +153,11 @@ Dentro da `<main>` estão as principais partes da página:
 - formulário de ocorrência.
 
 O uso da tag `<main>` ajuda a manter o código organizado e facilita a identificação do conteúdo principal da página.
+
+## Resultado da Estrutura HTML
+
+Após finalizar a estrutura principal da página em HTML, realizamos um teste para visualizar como os elementos estavam sendo exibidos antes da aplicação do CSS.
+
+A imagem abaixo mostra o resultado da página utilizando apenas a estrutura HTML:
+
+<img width="1005" height="1035" alt="image" src="https://github.com/user-attachments/assets/dfc5affe-e8ec-45d7-8176-0aa90377e6a0" />
