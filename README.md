@@ -162,7 +162,7 @@ A imagem abaixo mostra o resultado da página utilizando apenas a estrutura HTML
 
 <img width="1005" height="1035" alt="image" src="https://github.com/user-attachments/assets/dfc5affe-e8ec-45d7-8176-0aa90377e6a0" />
 
-### 🎨 Tutorial de Estilização: Folha de Estilos (`style.css`)
+### Tutorial de Estilização: Folha de Estilos (`style.css`)
 
 A estilização do **Conecta Cidade** foi construída utilizando práticas modernas de CSS3, garantindo uma identidade visual limpa, responsiva e alinhada às diretrizes de acessibilidade e usabilidade.
 
@@ -192,7 +192,7 @@ Alinhamento e estilização da barra superior da aplicação.
 
 ---
 
-#### 3. Seção Hero / Apresentação (`.apresentacao`)
+#### 3. Seção Apresentação (`.apresentacao`)
 Destaque inicial da Home com imagem de fundo e chamada para ação (CTA).
 
 * **`background-image`**: Combina um gradiente escuro semitransparente com a imagem da cidade para garantir o contraste e a leitura legível do texto branco.
