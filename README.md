@@ -161,3 +161,84 @@ Após finalizar a estrutura principal da página em HTML, realizamos um teste pa
 A imagem abaixo mostra o resultado da página utilizando apenas a estrutura HTML:
 
 <img width="1005" height="1035" alt="image" src="https://github.com/user-attachments/assets/dfc5affe-e8ec-45d7-8176-0aa90377e6a0" />
+
+### 🎨 Tutorial de Estilização: Folha de Estilos (`style.css`)
+
+A estilização do **Conecta Cidade** foi construída utilizando práticas modernas de CSS3, garantindo uma identidade visual limpa, responsiva e alinhada às diretrizes de acessibilidade e usabilidade.
+
+---
+
+#### 1. Regras Globais e Variáveis (`:root`)
+Padronização da base do documento e centralização da paleta de cores institucional.
+
+* **`*` (Reset Global)**: Zera as margens (`margin: 0`) e espaçamentos (`padding: 0`) padrão dos navegadores, além de aplicar `box-sizing: border-box` para simplificar o cálculo do tamanho dos elementos.
+* **`:root`**: Define variáveis globais de cores (tons de azul, amarelo de destaque, cinzas e branco), facilitando a manutenção e garantindo a consistência visual.
+* **`html { scroll-behavior: smooth; }`**: Ativa a rolagem suave ao clicar nos links de ancoragem interna.
+
+<img width="359" height="355" alt="image" src="https://github.com/user-attachments/assets/b09b8673-c061-4b6a-8729-500f5ff211a5" />
+
+
+---
+
+#### 2. Cabeçalho e Navegação (`header`)
+Alinhamento e estilização da barra superior da aplicação.
+
+* **`display: flex`**: Organiza a logo e a lista de navegação lado a lado, utilizando `justify-content: space-between` para empurrá-los para as extremidades.
+* **`#menu-btn { display: none; }`**: Oculta o botão hambúrguer no modo desktop, reservando sua exibição apenas para telas menores.
+* **`nav a:hover`**: Aplica uma transição suave de cor (`color: var(--amarelo)`) ao passar o mouse sobre os links do menu.
+
+<img width="437" height="428" alt="image" src="https://github.com/user-attachments/assets/90d645f4-1e21-430f-8d79-09f925869b12" />
+
+
+---
+
+#### 3. Seção Hero / Apresentação (`.apresentacao`)
+Destaque inicial da Home com imagem de fundo e chamada para ação (CTA).
+
+* **`background-image`**: Combina um gradiente escuro semitransparente com a imagem da cidade para garantir o contraste e a leitura legível do texto branco.
+* **`.apresentacao a`**: Estiliza o botão "Fazer uma denúncia" com fundo azul, bordas arredondadas e um detalhe de borda amarela à esquerda (`border-left: 4px solid`).
+
+<img width="652" height="731" alt="image" src="https://github.com/user-attachments/assets/3ac2809a-7c8b-4020-8692-626a3729f62d" />
+
+
+---
+
+#### 4. Layout de Conteúdo e Cards (`.area-conteudo`)
+Divisão das seções principais do mural em duas colunas através do Flexbox.
+
+* **`#denuncias-recentes` (65%) e `.sobre-nos` (35%)**: Proporção que prioriza a leitura dos relatórios da comunidade enquanto mantém a área explicativa visível na lateral.
+* **`.card-denuncia` e `.sobre-nos`**: Utilização de cards brancos com bordas suaves (`border-radius: 12px`) para separar visualmente as informações sobre o fundo azul claro.
+
+<img width="323" height="584" alt="image" src="https://github.com/user-attachments/assets/742731dc-26e8-4f1c-bb95-ee9d651fbe3b" />
+
+<img width="339" height="350" alt="image" src="https://github.com/user-attachments/assets/dd9ba6bf-92bf-4136-b5ff-bb05c67cf5b8" />
+
+---
+
+#### 5. Formulário de Registro (`#denuncia`)
+Estandardização dos campos de entrada de dados para garantir usabilidade.
+
+* **`input`, `select`, `textarea`**: Padronizados com largura total (`width: 100%`), espaçamento interno (`padding: 12px`) e bordas arredondadas.
+* **`button:hover`**: Adiciona uma microinteração de elevação (`transform: translateY(-2px)`) ao passar o mouse sobre o botão de envio.
+
+<img width="347" height="462" alt="image" src="https://github.com/user-attachments/assets/b3447f54-9285-4bac-87f0-b2288240d231" />
+
+---
+
+#### 6. Rodapé (`footer`)
+Finalização da página com alinhamento centralizado.
+
+* **`flex-direction: column`**: Organiza os links de contato/topo acima da mensagem de copyright.
+* **.footer-links**: Agrupa as opções de navegação rodapé com espaçamento uniforme (`gap: 25px`).
+
+<img width="326" height="525" alt="image" src="https://github.com/user-attachments/assets/b03ea71c-a198-4035-9867-a8abdff39967" />
+
+---
+
+#### 7. Design Responsivo (`@media (max-width: 768px)`)
+Adaptação automática do layout para dispositivos móveis (tablets e celulares).
+
+* **Reorganização do Layout**: Converte a disposição de duas colunas da `.area-conteudo` para exibição em coluna única (`flex-direction: column`).
+* **Ajuste Tipográfico**: Reduz proporcionalmente os tamanhos de fonte dos títulos (`h1`, `h2`) e imagens para melhor encaixe em telas menores.
+
+<img width="310" height="888" alt="image" src="https://github.com/user-attachments/assets/cee209c3-3456-4261-9d1c-b23c79c01277" />
