@@ -237,6 +237,6 @@ Finalização da página com alinhamento centralizado.
 Adaptação automática do layout para dispositivos móveis (tablets e celulares).
 
 * **Reorganização do Layout**: Converte a disposição de duas colunas da `.area-conteudo` para exibição em coluna única (`flex-direction: column`).
-* **Ajuste Tipográfico**: Reduz proporcionalmente os tamanhos de fonte dos títulos (`h1`, `h2`) e imagens para melhor encaixe em telas menores.
+* **Ajuste na Fonte**: Reduz proporcionalmente os tamanhos de fonte dos títulos (`h1`, `h2`) e imagens para melhor encaixe em telas menores.
 
 <img width="310" height="888" alt="image" src="https://github.com/user-attachments/assets/cee209c3-3456-4261-9d1c-b23c79c01277" />
