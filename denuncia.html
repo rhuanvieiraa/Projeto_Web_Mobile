@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Coneta Cidade - Nova Denúncia </title>
+        <script>
+            if (localStorage.getItem("logado") !== "true") {
+                alert("Você precisa estar logado para registrar uma denúncia!");
+                window.location.replace("login.html");
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header>
+            <img src="imagens/conecta-cabecalho.png">
+            <button
+            id="menu-btn"
+            aria-expanded="false"
+            aria-label="Abrir menu"> ☰ </button>
+
+            <nav id="menu-navegacao">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="denuncia.html">Criar Denúncia</a></li>
+                    <li><a href="minhas-denuncias.html">Denúncias</a></li>
+                    <li><a href="login.html" id="link-login"> Login </a></li>
+                    <li><a href="#" id="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="pagina-denuncia">
+            <form id="form-nova-denuncia">
+                <label for="titulo"> Título da Ocorrência: </label><br>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+
+                <label for="categoria"> Categoria: </label><br>
+                <select id="categoria" name="categoria" required>
+                        <option value=" "> Selecione uma Opção </option>
+                        <option value="asfalto"> Asfalto / Buraco</option>
+                        <option value="iluminacao"> Iluminação Pública </option>
+                        <option value="lixo"> Lixo / Entulho </option>
+                        <option value="sinalizacao"> Sinalização / Placa </option>
+                        <option value="outros"> Outros </option>
+                </select><br><br>
+
+                <label for="bairro"> Bairro / Endereço: </label><br>
+                <input type="text" id="bairro" name="bairro" placeholder="Ex: Av. Paulista, 1000" required><br><br>
+
+                <label for="foto"> Foto do Problema </label><br>
+                <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+                <label for="descricao"> Descrição do Problema </label><br>
+                <textarea id="descricao" rows="4"  placeholder="Conte mais detalhes sobre a situação...." required></textarea><br><br>
+
+                <button type="submit"> Publicar Ocorrência</button>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-links">
+                <a href="#contato">Contato</a>
+                <a href="#top">Voltar ao Início</a>
+            </div>
+            <p>&copy; 2026 Conecta Cidade - Projeto Extensionista</p>
+        </footer>
+    <script src="script.js"></script>    
+    </body>
+
+</html>
