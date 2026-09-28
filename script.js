@@ -14,7 +14,7 @@ menuBtn.addEventListener("click", function () {
     } else {
         menuBtn.innerHTML = "☰";
         menuBtn.setAttribute("aria-label", "Abrir menu");
-    }
+    } 
 });
 
 const linksMenu = menuNavegacao.querySelectorAll("a");
