@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Conecta Cidade - Login </title>
+        <link rel ="stylesheet" href="style.css">
+        
+    </head>
+        <header>
+            <img src="imagens/conecta-cabecalho.png">
+                <button
+                id="menu-btn"
+                aria-expanded="false"
+                aria-label="Abrir menu"> ☰ </button>
+
+        <nav id="menu-navegacao">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="denuncia.html">Criar Denúncia</a></li>
+                    <li><a href="minhas-denuncias.html">Denúncias</a></li>
+                    <li><a href="login.html" id="link-login"> Login </a></li>
+                    <li><a href="#" id="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="login-apresentacao">
+                <h1> Acesse sua conta </h1>
+                <p> Entre no Conecta Cidade para acompanhar suas denúncias e participar da comunidade. </p>
+            </section>
+            <div class ="area-conta">
+                <section id="area-login">
+                    <h2> Acessar Conta </h2>
+                    <form id="form-login">
+                        <label for="email"> E-mail: </label><br>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required><br><br>
+
+                        <label for="senha"> Senha: </label><br>
+                        <input type="password" id="senha" name="senha" placeholder="Sua senha" required><br><br>
+
+                        <button type="submit"> Entrar </button>
+                    </form>
+                    <br>
+                    <p> Ainda não tem conta? <a href="#cadastro"> Cadastre-se aqui ----->. </a></p>
+                </section>
+
+                <section id="cadastro">
+                    <h2> Criar Nova Conta </h2>
+                    <form id="form-cadastro">
+                        <label for="nome-completo"> Nome Completo: </label><br>
+                        <input type="text" id="nome-completo" name="nome" placeholder="Seu nome" required><br><br>
+
+                        <label for="email-cadastro"> E-mail: </label><br>
+                        <input type="email" id="email-cadastro" name="email" placeholder="seu@email.com" required><br><br>
+
+                        <label for="senha-cadastro"> Criar Senha: </label><br>
+                        <input type="password" id="senha-cadastro" name="senha" required><br><br>
+
+                        <button type="submit"> Cadastrar </button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-links">
+                <a href="#contato">Contato</a>
+                <a href="#top">Voltar ao Início</a>
+            </div>
+            <p>&copy; 2026 Conecta Cidade - Projeto Extensionista</p>
+        </footer>
+    <script src="script.js"></script>    
+    </body>
+</html>
