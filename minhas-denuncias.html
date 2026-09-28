@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Conecta Cidade - Minhas Denúncias </title>
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body id="top">
+        <header>
+            <img src="imagens/conecta-cabecalho.png">
+                <button
+                id="menu-btn"
+                aria-expanded="false"
+                aria-label="Abrir menu"> ☰ </button>
+
+        <nav id="menu-navegacao">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="denuncia.html">Criar Denúncia</a></li>
+                    <li><a href="minhas-denuncias.html">Denúncias</a></li>
+                    <li><a href="login.html" id="link-login"> Login </a></li>
+                    <li><a href="#" id="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+        </header>    
+        <main>
+            <section id="historico">
+                <h1> Denúncias realizadas </h1>
+
+                <article class="card-denuncia">
+                        <h3> Buraco na via principal </h3>
+                        <p><strong> Protocolo: </strong> #2026-001 </p>
+                        <p><strong> Data: </strong> 10/03/2026 </p>
+                        <p><strong> Status: </strong> <span class="status-pendente"> Pendente </span></p>
+                        <p><strong> Descrição: </strong> Existe um buraco na pista da direita provocando risco aos motoristas. </p>
+                </article>
+
+
+                <article class="card-denuncia">
+                        <h3> Vazamento de água na calçada </h3>
+                        <p><strong> Protocolo: </strong> #2026-042 </p>
+                        <p><strong> Data: </strong> 02/02/2026 </p>
+                        <p><strong> Status: </strong> <span class="status-resolvido"> Resolvido </span></p>
+                        <p><strong> Descrição: </strong> Cano estourado jorrando água limpa na rua. </p>
+                </article>
+                <div id="lista-denuncias"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-links">
+                <a href="#contato">Contato</a>
+                <a href="#top">Voltar ao Início</a>
+            </div>
+            <p>&copy; 2026 Conecta Cidade - Projeto Extensionista</p>
+        </footer>
+    <script src="script.js"></script>    
+    </body>
+</html>
