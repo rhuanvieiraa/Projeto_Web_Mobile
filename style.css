@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +26,9 @@ body {
     background-color: var(--azul-claro);
     color: var(--texto);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -33,6 +37,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header img {
@@ -59,6 +66,7 @@ nav a {
 
 main {
     width: 100%;
+    flex: 1;
 }
 
 .apresentacao {
@@ -140,13 +148,19 @@ main {
     margin-bottom: 8px;
 }
 
+.pagina-denuncia {
+    width: 90%;
+    max-width: 750px;
+    margin: 50px auto;
+}
+
 .sobre-nos {
     width: 35%;
     background-color: var(--branco);
     padding: 30px;
     border-radius: 12px;
     border-top: 4px solid var(--amarelo);
-    transform: translateY(-2px)
+    transform: translateY(-2px);
 }
 
 .sobre-nos h2 {
@@ -171,6 +185,22 @@ main {
     color: var(--azul-escuro);
     margin-bottom: 25px;
     font-size: 28px;
+}
+
+#historico {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+#historico h1 {
+    color: var(--azul-escuro);
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+#historico .card-denuncia {
+    width: 100%;
 }
 
 label {
@@ -251,22 +281,145 @@ footer p {
     text-align: center;
 }
 
+/* Página de Login */
+
+.login-apresentacao {
+    text-align: center;
+    padding: 45px 5% 25px 5%;
+}
+
+.login-apresentacao h1 {
+    color: var(--azul-escuro);
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.login-apresentacao p {
+    color: var(--texto-secundario);
+    font-size: 16px;
+}
+
+.area-conta {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 30px;
+}
+
+#area-login,
+#cadastro {
+    width: 50%;
+
+    background-color: var(--branco);
+
+    padding: 30px;
+
+    border-radius: 12px;
+    border-top: 4px solid var(--amarelo);
+}
+
+#area-login h2,
+#cadastro h2 {
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+#form-login,
+#form-cadastro {
+    width: 100%;
+}
+
+#form-login input,
+#form-cadastro input {
+    width: 100%;
+}
+
+#form-login button,
+#form-cadastro button {
+    width: 100%;
+}
+
+#area-login p {
+    text-align: center;
+    color: var(--texto-secundario);
+}
+
+#area-login p a {
+    color: var(--azul-principal);
+    font-weight: bold;
+}
+
+.card-denuncia {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.card-denuncia h3 {
+    color: var(--azul-principal);
+    margin-bottom: 12px;
+}
+
+.card-denuncia p {
+    margin-bottom: 8px;
+}
+
 @media (max-width: 768px) {
 
     header {
         padding: 15px 5%;
+        flex-wrap: wrap;
     }
 
     header img {
         width: 110px;
     }
 
-    nav ul {
-        gap: 10px;
+    #menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--branco);
+        font-size: 28px;
+        cursor: pointer;
     }
 
-    nav a {
-        font-size: 12px;
+    #menu-navegacao {
+        width: 100%;
+        background-color: var(--azul-escuro);
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    #menu-navegacao.menu-aberto {
+        max-height: 250px;
+        opacity: 1;
+    }
+
+    #menu-navegacao ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #menu-navegacao li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-navegacao a {
+        display: block;
+        padding: 15px;
+        font-size: 14px;
     }
 
     .apresentacao {
@@ -288,11 +441,11 @@ footer p {
         flex-direction: column;
     }
 
-    .sobre-nos {
+    #denuncias-recentes {
         width: 100%;
     }
 
-    #denuncias-recentes {
+    .sobre-nos {
         width: 100%;
     }
 
@@ -309,5 +462,22 @@ footer p {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+
+    .login-apresentacao {
+        padding: 35px 5% 20px 5%;
+    }
+
+    .login-apresentacao h1 {
+        font-size: 32px;
+    }
+
+    .area-conta {
+        flex-direction: column;
+    }
+
+    #area-login,
+    #cadastro {
+        width: 100%;
     }
 }
