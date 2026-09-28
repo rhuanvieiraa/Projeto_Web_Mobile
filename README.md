@@ -553,4 +553,20 @@ Antes de salvar uma nova ocorrência, o JavaScript recupera as denúncias anteri
 
 <img width="488" height="316" alt="image" src="https://github.com/user-attachments/assets/1c2b44d1-144a-4b16-8d42-3078f3d1584a" />
 
-Uso do JSON sugerido pela IA - avaliamos as possibilidades de uso e implementamos.
+
+> **Observação:** O uso de JSON nessa etapa foi implementado com auxílio de Inteligência Artificial, utilizada como ferramenta de apoio para entender como armazenar vários registros no `localStorage`.
+
+# Conclusão
+
+O desenvolvimento do Conecta Cidade permitiu aplicar, na prática, os conhecimentos de HTML5, CSS3 e JavaScript em um projeto com proposta de impacto social.
+
+Durante a construção do site, foram trabalhados conceitos como:
+
+- criação de páginas estruturadas com HTML;
+- estilização e responsividade com CSS;
+- interação com formulários;
+- manipulação de elementos com JavaScript;
+- armazenamento de informações com `localStorage`;
+- criação dinâmica de conteúdos na página.
+
+A experiência ajudou o grupo a compreender melhor a integração entre HTML, CSS e JavaScript e como essas tecnologias podem ser utilizadas em conjunto para construir uma aplicação web funcional.
