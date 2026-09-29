@@ -16,6 +16,10 @@ Como São Paulo é uma cidade muito grande, entendemos também que é difícil p
 
 Foi daí que pensamos: e se existisse um lugar simples onde a própria população pudesse mostrar esses problemas e acompanhar o que aconteceu depois?
 
+# Porque esse é um projeto extensionista?
+
+Esse é um projeto extensionista porque a gente aplicou o que aprendeu na disciplina em uma proposta voltada para a comunidade. O Conecta Cidade foi pensado para ajudar no registro e acompanhamento de problemas urbanos, aproximando a tecnologia de uma situação real da sociedade.
+
 # Sobre a nossa ideia:
 
 A proposta é criar um site de ajuda urbana, que funcione como um espaço de participação da comunidade.
